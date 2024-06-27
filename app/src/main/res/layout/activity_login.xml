@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="391dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/loginEditText"
+            android:layout_width="245dp"
+            android:layout_height="102dp"
+            android:hint="Логин"></EditText>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="243dp"
+            android:layout_height="106dp"
+            android:hint="Пароль"></EditText>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="175dp"
+            android:layout_height="71dp"
+            android:text="Авторизация"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

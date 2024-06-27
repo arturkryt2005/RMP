@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <!-- Горизонтальный контейнер для изображения и текстовых полей -->
+
+    <!-- Кнопка для загрузки фотографии -->
+
+    <!-- Нижний навигационный элемент с кнопками-картинками -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- ImageView для отображения фотографии пользователя -->
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_friends"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_friends" /> <!-- Добавлен круглый фон через drawable -->
+
+        <!-- Вертикальный контейнер для логина и пароля -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- TextView для отображения логина -->
+            <TextView
+                android:id="@+id/loginTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingBottom="4dp"
+                android:text="Логин: "
+                android:textColor="@android:color/black"
+                android:textSize="18sp" /> <!-- Добавлен отступ снизу -->
+
+            <!-- TextView для отображения пароля -->
+            <TextView
+                android:id="@+id/passwordTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingTop="4dp"
+                android:text="Пароль: "
+                android:textColor="@android:color/black"
+                android:textSize="18sp" /> <!-- Добавлен отступ сверху -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/uploadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="Загрузить фотографию"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="742dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="450dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+
+        <!-- Кнопка "Выложить пост" -->
+
+        <!-- Кнопка "Лента" -->
+        <ImageButton
+            android:id="@+id/btnPost"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Выложить пост"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_post" />
+
+        <ImageButton
+            android:id="@+id/btnFeed"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Лента"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_feed" />
+
+        <!-- Кнопка "Друзья" -->
+
+        <!-- Кнопка "Аккаунт" -->
+        <ImageButton
+            android:id="@+id/btnFriends"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Друзья"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_friends" />
+
+        <ImageButton
+            android:id="@+id/btnAccount"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Аккаунт"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_account" />
+    </LinearLayout>
+
+</LinearLayout>
